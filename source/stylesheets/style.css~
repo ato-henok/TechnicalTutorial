@@ -1,0 +1,15 @@
+.myNav{
+background-color:red;
+}
+
+#myId{background-color:green;
+}
+body{
+background-color:blue;
+}
+head{
+background-color:yellow;
+}
+footer{
+background-color:orange;
+}

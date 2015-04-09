@@ -1,0 +1,20 @@
+<html>
+<head>
+<%=partial "header"%>
+</head>
+<body>
+<div class="myNav">
+<ul>
+<li><a href="mainHtml.html">HTML/CSS</a></li>
+<li><a href="ruby_tutorial.html">Ruby</a></li>
+</ul>
+</div>
+
+<p>
+Javascript
+</p>
+</body>
+<footer>
+<%=partial "footer"%>
+</footer>
+</html>

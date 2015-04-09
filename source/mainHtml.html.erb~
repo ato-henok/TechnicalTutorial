@@ -1,0 +1,19 @@
+<html>
+<head>
+<%=partial "header"%>
+</head>
+
+<body>
+	<div class="myNav" id="myId">
+	<ul>
+	    <li style="background-color:white"><a href="javascript_tutorial.html" style="color:red" style="color:red">Javascript</a></li>
+	    <li><a href="ruby_tutorial.html">Ruby</a></li>
+	 </ul>
+	</div>
+
+
+</body>
+<footer>
+<%=partial "footer"%>
+</footer>
+</html>
