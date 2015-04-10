@@ -11,154 +11,76 @@
 
 <!--Ruby Tutorial-->
 <div id="rubyTutorial">
-<p><strong>Introduction</strong></p>
 
-<p>what is ruby?</p>
+<h2><strong>Introduction</strong></h2>
+
+<h3>What is Ruby?</h3>
 
 <p>Ruby is a cross-platform interpreted language that has many features in common with other &ldquo;scripting&rdquo; languages such as Perl and Python. It has an easily readable type of syntax that looks somewhat Pascal-like at first sight. It is thoroughly object-oriented and has a good deal in common with the great-granddaddy of &ldquo;pure&rdquo; object-oriented languages, Smalltalk. It has been said that the languages that most influenced the development of Ruby were Perl, Smalltalk, Eiffel, Ada, and Lisp. The Ruby language was created by Yukihiro Matsumoto (commonly known as Matz), and it was first released in 1995.</p>
 
-<p>Why use Ruby?</p>
-
-<p style="margin-left:2.4pt;"><strong>Ruby is &quot;A Programmer&#39;s Best Friend&quot;.</strong></p>
+<h3>Why Use Ruby?</h3>
 
 <p style="margin-left:2.4pt;">Ruby has features that are similar to those of Smalltalk, Perl, and Python. Perl, Python, and Smalltalk are scripting languages. Smalltalk is a true object-oriented language. Ruby, like Smalltalk, is a perfect object-oriented language. Using Ruby syntax is much easier than using Smalltalk syntax.</p>
 
-<p><strong>Features of Ruby</strong></p>
+<h2 style="margin-left: 2.4pt;"><b>Data Types</b></h2>
 
-<ul>
-	<li>Ruby is an open-source and is freely available on the Web, but it is subject to a license.</li>
-	<li>Ruby is a general-purpose, interpreted programming language.</li>
-	<li>Ruby is a true object-oriented programming language.</li>
-	<li>Ruby is a server-side scripting language similar to Python and PERL.</li>
-	<li>Ruby can be used to write Common Gateway Interface (CGI) scripts.</li>
-	<li>Ruby can be embedded into Hypertext Markup Language (HTML).</li>
-	<li>Ruby has a clean and easy syntax that allows a new developer to learn Ruby very quickly and easily.</li>
-	<li>Ruby has similar syntax to that of many programming languages such as C++ and Perl.</li>
-	<li>Ruby is very much scalable and big programs written in Ruby are easily maintainable.</li>
-	<li>Ruby can be used for developing Internet and intranet applications.</li>
-	<li>Ruby can be installed in Windows and POSIX environments.</li>
-	<li>Ruby support many GUI tools such as Tcl/Tk, GTK, and OpenGL.</li>
-	<li>Ruby can easily be connected to DB2, MySQL, Oracle, and Sybase.</li>
-	<li>Ruby has a rich set of built-in functions, which can be used directly into Ruby scripts.</li>
-</ul>
+<h3>Strings</h3>
 
-<p>&nbsp;</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black">A String object in Ruby holds and manipulates an arbitrary sequence of one or more bytes, typically representing characters that represent human language.<o:p></o:p></span></p>
 
-<p>General Syntax</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black">The simplest string literals are enclosed in single quotes (the apostrophe character). The text within the quote marks is the value of the string:<o:p></o:p></span></p>
 
-<p style="margin-left:2.4pt;">Let us write a simple program in ruby. All ruby files will have extension&nbsp;<strong>.rb</strong>. So, put the following source code in a test.rb file.</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt">&#39;Welcome to CSE3901&#39;</p>
 
-<!--**********************-->
-<?prettify?>
-<code class="prettyprint" lang="ruby">
-<!--code-->
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt">Expression Substitution</p>
 
-<p>#!/usr/bin/ruby -w</p>
-def function end
-<p>puts &quot;Hello, Ruby!&quot;;</p>
-</code>
-<!--**********************-->
-<p style="margin-left:2.4pt;">Here, I assumed that you have Ruby interpreter available in /usr/bin directory. Now, try to run this program as follows:</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black">Expression substitution is a means of embedding the value of any Ruby expression into a string using #{ and }:</span></p>
 
-<p>$ ruby test.rb</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black"><o:p></o:p></span></p>
 
-<p style="margin-left:2.4pt;">This will produce the following result:</p>
+<div>
+<pre>
+x, y, z = 12, 36, 72</pre>
 
-<p>Hello, Ruby!</p>
+<pre>
+puts &quot;The value of x is #{ x }.&quot;</pre>
 
-<p style="margin-left:2.4pt;">You have seen a simple Ruby program, now lets see few basic concepts related to Ruby Syntax:</p>
+<pre>
+puts &quot;The sum of x and y is #{ x + y }.&quot;</pre>
 
-<h2>Whitespace in Ruby Program:</h2>
+<pre>
+puts &quot;The average was #{ (x + y + z)/3 }.&quot;</pre>
 
-<p style="margin-left:2.4pt;">Whitespace characters such as spaces and tabs are generally ignored in Ruby code, except when they appear in strings. Sometimes, however, they are used to interpret ambiguous statements. Interpretations of this sort produce warnings when the -w option is enabled.</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black">This will produce the following result:</span></p>
 
-<p style="margin-left:2.4pt;"><strong>Example:</strong></p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black"><o:p></o:p></span></p>
 
-<p>a + b is interpreted as a+b ( Here a is a local variable)</p>
+<div>
+<pre>
+The value of x is 12.</pre>
 
-<p>a&nbsp; +b is interpreted as a(+b) ( Here a is a method call)</p>
+<pre>
+The sum of x and y is 48.</pre>
 
-<h2>Line Endings in Ruby Program:</h2>
-
-<p style="margin-left:2.4pt;">Ruby interprets semicolons and newline characters as the ending of a statement. However, if Ruby encounters operators, such as +, -, or backslash at the end of a line, they indicate the continuation of a statement.</p>
-
-<h2>Ruby Identifiers:</h2>
-
-<p style="margin-left:2.4pt;">Identifiers are names of variables, constants, and methods. Ruby identifiers are case sensitive. It mean Ram and RAM are two different idendifiers in Ruby.</p>
-
-<p style="margin-left:2.4pt;">Ruby identifier names may consist of alphanumeric characters and the underscore character ( _ ).</p>
-
-<p>Ruby Comments:</p>
-
-<p style="margin-left:2.4pt;">A comment hides a line, part of a line, or several lines from the Ruby interpreter. You can use the hash character (#) at the beginning of a line:</p>
-
-<p># I am a comment. Just ignore me.</p>
+<pre>
+The average was 40.</pre>
 
 <p>&nbsp;</p>
 
-<p>Downloading Ruby</p>
+<h3>Ranges, Arrays, Hashes</h3>
 
-<p><a name="h.gjdgxs"></a>You can download the latest version of Ruby at&nbsp;<a href="http://www.ruby-lang.org/en/downloads/">http://www.ruby-lang.org/en/downloads/</a>. Be sure to download the binaries (not merely the source code). Windows users have the option of installing Ruby using the Ruby Installer, available at&nbsp;<a href="http://www.rubyinstaller.org/">http://www.rubyinstaller.org/</a>. There are also several alternative implementations of Ruby, the most established of which is JRuby.&nbsp;</p>
+<p><strong>Ranges</strong></p>
 
-<p>Running Ruby Programs</p>
-
-<p><a name="h.30j0zll"></a>It is often useful to keep a command window open in the source directory containing your Ruby program files. Assuming that the Ruby interpreter is correctly pathed on your system, you will then be able to run programs by entering&nbsp;ruby&nbsp;<em>programname</em>. For example, this is the command you would enter in order to run the&nbsp;<em>helloworld.rb</em>program:</p>
-
-<p style="margin-left:15.0pt;">ruby helloworld.rb</p>
-
-<p><a name="h.1fob9te"></a>If you use a Ruby IDE, you may be able to load the Ruby programs into the IDE and run them using the integrated tools of that IDE.</p>
-
-<p>&nbsp;</p>
-
-<p>Data Types</p>
-
-<p>Strings</p>
-
-<p style="margin-left:2.4pt;">A String object in Ruby holds and manipulates an arbitrary sequence of one or more bytes, typically representing characters that represent human language.</p>
-
-<p style="margin-left:2.4pt;">The simplest string literals are enclosed in single quotes (the apostrophe character). The text within the quote marks is the value of the string:</p>
-
-<p>&#39;Welcome to CSE 3901&#39;</p>
-
-<p style="margin-left:2.4pt;">If you need to place an apostrophe within a single-quoted string literal, precede it with a backslash so that the Ruby interpreter does not think that it terminates the string:</p>
-
-<p>&#39;Won\&#39;t you read O\&#39;Reilly\&#39;s book?&#39;</p>
-
-<p style="margin-left:2.4pt;">The backslash also works to escape another backslash, so that the second backslash is not itself interpreted as an escape character.</p>
-
-<p style="margin-left:2.4pt;">Following are string-related features Ruby.</p>
-
-<h2>Expression Substitution:</h2>
-
-<p style="margin-left:2.4pt;">Expression substitution is a means of embedding the value of any Ruby expression into a string using #{ and }:</p>
-
-<p>#!/usr/bin/ruby</p>
-
-<p>&nbsp;</p>
-
-<p>x, y, z = 12, 36, 72</p>
-
-<p>puts &quot;The value of x is #{ x }.&quot;</p>
-
-<p>puts &quot;The sum of x and y is #{ x + y }.&quot;</p>
-
-<p>puts &quot;The average was #{ (x + y + z)/3 }.&quot;</p>
-
-<p style="margin-left:2.4pt;">This will produce the following result:</p>
-
-<p>The value of x is 12.</p>
-
-<p>The sum of x and y is 48.</p>
-
-<p>The average was 40.</p>
-
-<p>&nbsp;</p>
-
-<p>Ranges, Arrays, Hashes</p>
-
-<p style="margin-left:2.4pt;">Ranges occur everywhere: January to December, 0 to 9, lines 50 through 67, and so on. Ruby supports ranges and allows us to use ranges in a variety of ways:</p>
-
-<p>Create instance of class (Range)</p>
+<p style="margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;margin-left:
+2.4pt;text-align:justify;text-justify:inter-ideograph;line-height:18.0pt"><span style="font-size:10.5pt;font-family:&quot;Arial&quot;,sans-serif;color:black">Ranges occur everywhere: January to December, 0 to 9, lines 50 through 67, and so on. Ruby supports ranges and allows us to use ranges in a variety of ways:<o:p></o:p></span></p>
 
 <p>You can use &ldquo;new&rdquo; to create a range object:</p>
 
@@ -172,6 +94,7 @@ def function end
 
 <p>Using the method to_a, we can convert ranges to arrays</p>
 
+<div>
 <p>range1 = (1..10).to_a</p>
 
 <p>range2 = (&#39;bar&#39;..&#39;bat&#39;).to_a</p>
@@ -181,12 +104,15 @@ def function end
 <p>puts &quot;#{range1}&quot;</p>
 
 <p>puts &quot;#{range2}&quot;</p>
+</div>
 
 <p style="margin-left:2.4pt;">This will produce the following result:</p>
 
+<div>
 <p>1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
 
 <p>bar, bas, bat</p>
+</div>
 
 <p>Method begin/end, first/last</p>
 
@@ -194,7 +120,15 @@ def function end
 
 <p>b.last 2 #=&gt;[&ldquo;car&rdquo;,&rdquo;cas&rdquo;]</p>
 
-<p>Arrays</p>
+<p>Range Inclusion</p>
+
+<p>Test for inclusion</p>
+
+<p>nums === 6 <em>#=&gt; true</em></p>
+
+<p>b === &#39;cat&#39; <em>#=&gt; false&nbsp;</em></p>
+
+<p><strong>Arrays</strong></p>
 
 <p>You can create an instance Array using &ldquo;new&rdquo;:</p>
 
@@ -220,17 +154,51 @@ def function end
 
 <p>b.length #=&gt;11</p>
 
-<p><a name="h.3znysh7"></a>b[2,3] #=&gt; [3,14,&rdquo;pi&rdquo;,[]]</p>
+<p>b[2,3] #=&gt; [3,14,&rdquo;pi&rdquo;,[]]</p>
 
-<p>Hashes</p>
+<p>Growing/Shrinking of array:</p>
 
-<p>Classes</p>
+<p>n = [10, 20]</p>
 
-<p>Object</p>
+<p>n.push(30,40).size #=&gt; 4</p>
 
-<p>Loops and Iterators</p>
+<p>n.pop #=&gt; 40</p>
 
-<p><strong>Loops vs Iterations</strong></p>
+<p>n = [10, 20]</p>
+
+<p>n.unshift(30,40).size #=&gt;4</p>
+
+<p>n.shift #=&gt; 30</p>
+
+<p><strong>Hashes</strong></p>
+
+<p>Just like an array, you can create a hash by creating a new instance of the Hash class:</p>
+
+<p><em>hash1.rb</em></p>
+
+<p style="margin-left:15pt;">h1 = Hash.new</p>
+
+<p style="margin-left:15pt;">h2 = Hash.new(&quot;Some kind of ring&quot;</p>
+
+<p style="margin-left:15pt;">&nbsp;</p>
+
+<p style="margin-left:15pt;"><span style="line-height: 1.6;">There is a shorthand way of creating Hashes and initializing them with key-value pairs. Just add a key followed by&nbsp;=&gt;&nbsp;and its associated value; each key-value pair should be separated by a comma and the whole lot placed inside a pair of curly brackets:</span></p>
+</div>
+</div>
+
+<p style="margin-left:15pt;">h1 = {&nbsp;&nbsp;&nbsp; &#39;room1&#39;=&gt;&#39;The Treasure Room&#39;,</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;room2&#39;=&gt;&#39;The Throne Room&#39;,</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;loc1&#39;=&gt;&#39;A Forest Glade&#39;,</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#39;loc2&#39;=&gt;&#39;A Mountain Stream&#39; }</p>
+
+<h2 style="margin-left: 15pt;">&nbsp;</h2>
+
+<h2><strong>Loops and Iterators</strong></h2>
+
+<h3>Loops vs Iterations</h3>
 
 <p>The basic difference between Loops and Iterators is that loops run a block of code multiple times while keeping track of the loop number in a form of &ldquo;index&rdquo;; on the other hand, iteration is simply running a block of code multiple times.</p>
 
@@ -274,7 +242,7 @@ def function end
 
 <p>In the above example, the .each goes through the three elements in the array. The elements inside the array in this case are another array. In the first run of .each, the element being processed is [1,2,3]. The three block parameters refer to the 3 elements in this array. Therefore, in the first run of .each, the three values 1, 2, 3 are printed.</p>
 
-<h1>While Loops</h1>
+<h3><strong>while Loops</strong></h3>
 
 <p>This is another looping technique. The difference with for-loop is that while-loop does NOT keep track of the index by default. It loops until the condition is false.</p>
 
@@ -292,7 +260,7 @@ def function end
 
 <p>In the example above, the block &ldquo;happy&rdquo; will run as long as the condition &ldquo;buckeye&rdquo; holds.</p>
 
-<h1>Until Loops</h1>
+<p><strong>until Loops</strong></p>
 
 <p>These loops are the opposite of while-loops. Code executes until the condition is reached.</p>
 
@@ -309,6 +277,228 @@ def function end
 <p style="margin-left:15.0pt;">end</p>
 
 <p>The above example, starts from i=0, then it increments it &ldquo;until&rdquo; it is 10, but excludes 10. Thus, the code would print out 0 to 9.&nbsp;</p>
+
+<h2><strong>Conditional Statement</strong></h2>
+
+<h3>if...then...else</h3>
+
+<p>A simple test like this has only one of two possible results. Either a bit of code is run or it isn&rsquo;t, depending on whether the test evaluates to true or not. Often, you will need to have more than two possible outcomes. Let&rsquo;s suppose, for example, that your program needs to follow one course of action if the day is a weekday and a different course of action if it is a weekend. You can test these conditions by adding an&nbsp;else&nbsp;section after the&nbsp;if&nbsp;section, like this:</p>
+
+<p><em>if_else.rb</em></p>
+
+<p style="margin-left:15pt;">if aDay == &#39;Saturday&#39; or aDay == &#39;Sunday&#39;</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; daytype = &#39;weekend&#39;</p>
+
+<p style="margin-left:15pt;">else</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; daytype = &#39;weekday&#39;</p>
+
+<p style="margin-left:15pt;">end</p>
+
+<h3>and, or, and not</h3>
+
+<p>Incidentally, Ruby has two different syntaxes for testing Boolean (true/false) conditions. In the previous example, I&rsquo;ve used the English-language style operators:&nbsp;and,&nbsp;or, and&nbsp;not. If you prefer, you could use alternative operators similar to those used in many other programming languages, namely,&amp;&amp;&nbsp;(and),&nbsp;||&nbsp;(or), and&nbsp;!&nbsp;(not).</p>
+
+<p>Be careful, though: The two sets of operators aren&rsquo;t completely interchangeable. For one thing, they have different precedence, which means that when multiple operators are used in a single test, the parts of the test may be evaluated in different orders depending on which operators you use. For example, look at this test:</p>
+
+<p><em>days.rb</em></p>
+
+<p style="margin-left:15pt;">if aDay == &#39;Saturday&#39; or aDay == &#39;Sunday&#39; and not working_overtime</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; daytype = &#39;holiday&#39;</p>
+
+<p style="margin-left:15pt;">end</p>
+
+<h3>negation</h3>
+
+<p>In the previous example, I used the negation operator (!) in the expression&nbsp;!working_overtime, which can be read as &ldquo;not working_overtime.&rdquo; The negation operator can be used at the start of an expression; as an alternative, you can use the &ldquo;not equals&rdquo; (!=&nbsp;) operator between the left and right sides of an expression:</p>
+
+<p style="margin-left:15pt;">!(1==1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #=&gt; false</p>
+
+<p style="margin-left:15pt;">1!=1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #=&gt; false</p>
+
+<p>Alternatively, you can use&nbsp;not&nbsp;instead of&nbsp;!:</p>
+
+<p style="margin-left:15pt;">not( 1==1 )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #=&gt; false</p>
+
+<h3>if..elsif</h3>
+
+<p>There will no doubt be occasions when you will need to take multiple different actions based on several alternative conditions. One way of doing this is by evaluating one&nbsp;if&nbsp;condition followed by a series of other test conditions placed after the keyword&nbsp;elsif. The whole lot must then be terminated using the&nbsp;end&nbsp;keyword.</p>
+
+<p>For example, here I am repeatedly taking input from a user inside a&nbsp;while&nbsp;loop. An&nbsp;if&nbsp;condition tests whether the user enters &ldquo;q&rdquo; (I&rsquo;ve used&nbsp;chomp()&nbsp;to remove the carriage return from the input). If &ldquo;q&rdquo; is not entered, the first&nbsp;elsif&nbsp;condition tests whether the integer value of the input (input.to_i) is greater than 800; if this test fails, the next&nbsp;elsif&nbsp;condition tests whether it is less than or equal to 800:</p>
+
+<p><em>if_elsif.rb</em></p>
+
+<p style="margin-left:15pt;">while input != &#39;q&#39; do</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; puts(&quot;Enter a number between 1 and 1000 (or &#39;q&#39; to quit)&quot;)</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; print(&quot;?- &quot;)</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; input = gets().chomp()</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; if input == &#39;q&#39;</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts( &quot;Bye&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; elsif input.to_i &gt; 800</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts( &quot;That&#39;s a high rate of pay!&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; elsif input.to_i &lt;= 800</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts( &quot;We can afford that&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; end</p>
+
+<p style="margin-left:15pt;">end</p>
+
+<h2 style="margin-left: 15pt;">&nbsp;</h2>
+
+<h3>unless</h3>
+
+<p>Ruby also can also perform&nbsp;unless&nbsp;tests, which are the exact opposite of&nbsp;if&nbsp;tests:</p>
+
+<p><em>unless.rb</em></p>
+
+<p style="margin-left:15pt;">unless aDay == &#39;Saturday&#39; or aDay == &#39;Sunday&#39;</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; daytype = &#39;weekday&#39;</p>
+
+<p style="margin-left:15pt;">else</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; daytype = &#39;weekend&#39;</p>
+
+<p style="margin-left:15pt;">end</p>
+
+<h3>case Statement</h3>
+
+<p>When you need to take a variety of different actions based on the value of a single variable, multipleif..elsif&nbsp;tests are verbose and repetitive.</p>
+
+<p>A neater alternative is provided by a&nbsp;case&nbsp;statement. This begins with the word&nbsp;case&nbsp;followed by the variable name to test. Then comes a series of&nbsp;when&nbsp;sections, each of which specifies a &ldquo;trigger&rdquo; value followed by some code.</p>
+
+<p>This code executes only when the test variable equals the trigger value:</p>
+
+<p><em>case.rb</em></p>
+
+<p style="margin-left:15pt;">case( i )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when 1 then puts(&quot;It&#39;s Monday&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when 2 then puts(&quot;It&#39;s Tuesday&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when 3 then puts(&quot;It&#39;s Wednesday&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when 4 then puts(&quot;It&#39;s Thursday&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when 5 then puts(&quot;It&#39;s Friday&quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; when (6..7) then puts( &quot;Yippee! It&#39;s the weekend! &quot; )</p>
+
+<p style="margin-left:15pt;">&nbsp;&nbsp; else puts( &quot;That&#39;s not a real day!&quot; )</p>
+
+<p style="margin-left:15pt;">end</p>
+
+<h2><strong>Class</strong></h2>
+
+<h3>Definition of Class</h3>
+
+<p><span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">An object-oriented program involves classes and objects. A class is the blueprint from which individual objects are created. In object-oriented terms, we say that your&nbsp;</span><i style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">bicycle</i><span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">&nbsp;is an instance of the&nbsp;</span><i style="box-sizing: border-box; color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">class of objects</i><span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">&nbsp;known as bicycles.</span></p>
+
+<p><span style="color: rgb(0, 0, 0); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: justify;">cl.rb</span></p>
+
+<p style="text-align: justify;"><font color="#000000" face="Open Sans, Arial, sans-serif"><span style="font-size: 14px; line-height: 24px;">Class Customer</span></font></p>
+
+<p style="text-align: justify;"><font color="#000000" face="Open Sans, Arial, sans-serif"><span style="font-size: 14px; line-height: 24px;">end</span></font></p>
+
+<h3 style="text-align: justify;">Variables in A Ruby Class</h3>
+
+<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;">cl1.rb</p>
+
+<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;">class Customer</p>
+
+<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;">&nbsp; &nbsp; &nbsp;@@no_of_customers=0</p>
+
+<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;">end</p>
+
+<ul class="list" style="box-sizing: border-box; color: rgb(49, 49, 49); font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 22px;">
+	<li style="box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(http://www.tutorialspoint.com/images/icon-bullet.png) 0px 4px no-repeat;">
+	<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><b style="box-sizing: border-box;">Local Variables:</b>&nbsp;Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _.</p>
+	</li>
+	<li style="box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(http://www.tutorialspoint.com/images/icon-bullet.png) 0px 4px no-repeat;">
+	<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><b style="box-sizing: border-box;">Instance Variables:</b>&nbsp;Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.</p>
+	</li>
+	<li style="box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(http://www.tutorialspoint.com/images/icon-bullet.png) 0px 4px no-repeat;">
+	<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><b style="box-sizing: border-box;">Class Variables:</b>&nbsp;Class variables are available across different objects. A class variable belongs to the class and is a characteristic of a class. They are preceded by the sign @@ and are followed by the variable name.</p>
+	</li>
+	<li style="box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(http://www.tutorialspoint.com/images/icon-bullet.png) 0px 4px no-repeat;">
+	<p style="box-sizing: border-box; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify;"><b style="box-sizing: border-box;">Global Variables:</b>&nbsp;Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($).</p>
+	</li>
+	<li style="box-sizing: border-box; line-height: 24px; margin-bottom: 5px; padding: 0px 0px 0px 19px; list-style: none; color: rgb(0, 0, 0); background: url(http://www.tutorialspoint.com/images/icon-bullet.png) 0px 4px no-repeat;">&nbsp;</li>
+</ul>
+
+<h3>&nbsp;Creating Objects in Ruby Using new Method</h3>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">You can create objects in Ruby by using the method&nbsp;<i style="box-sizing: border-box;">new</i>&nbsp;of the class.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">The method&nbsp;<i style="box-sizing: border-box;">new</i>&nbsp;is a unique type of method, which is predefined in the Ruby library. The new method belongs to the&nbsp;<i style="box-sizing: border-box;">class</i>&nbsp;methods.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">cust1=Customer.new</p>
+
+<h3>Custom Method to Create Ruby Objects</h3>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">You can pass parameters to method&nbsp;<i style="box-sizing: border-box;">new</i>&nbsp;and those parameters can be used to initialize class variables.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">When you plan to declare the&nbsp;<i style="box-sizing: border-box;">new</i>&nbsp;method with parameters, you need to declare the method<i style="box-sizing: border-box;">initialize</i>&nbsp;at the time of the class creation.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">The&nbsp;<i style="box-sizing: border-box;">initialize</i>&nbsp;method is a special type of method, which will be executed when the&nbsp;<i style="box-sizing: border-box;">new</i>&nbsp;method of the class is called with parameters.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">Here is the example to create initialize method:</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">class Customer</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; @@no_of_customers=0</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; def initialize(id,name,addr)</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; @cust_id=id</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; @cust_name=name</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; @cust_addr=addr</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp;end</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">end</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">Now, you can create objects as follows:</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">cust1=Customer.new(&quot;1&quot;,&quot;Brutus&quot;,&quot;Buckeye Village&quot;)</p>
+
+<h3>Member Functions in Ruby Class</h3>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">In Ruby, functions are called methods. Each method in a&nbsp;<i style="box-sizing: border-box;">class</i>&nbsp;starts with the keyword&nbsp;<i style="box-sizing: border-box;">def</i>followed by the method name.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">The method name always preferred in&nbsp;<b style="box-sizing: border-box;">lowercase letters</b>. You end a method in Ruby by using the keyword&nbsp;<i style="box-sizing: border-box;">end</i>.</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">Here is the example to define a Ruby method:</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">class Buckeye</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; def &nbsp;function</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; statement &nbsp;1</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; &nbsp; statement &nbsp; 2</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp; &nbsp; &nbsp; end</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">end</p>
+
+<p style="box-sizing: border-box; color: rgb(0, 0, 0); line-height: 24px; margin: 0em 0.2em 1em; word-wrap: break-word; padding: 0px; text-align: justify; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px;">&nbsp;</p>
+
+<p>&nbsp;</p>
 
 </div>
 
