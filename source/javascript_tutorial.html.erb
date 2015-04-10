@@ -8,9 +8,69 @@
 </ul>
 </div>
 
-<p>
-Javascript
-</p>
+
+<p class="Standard" style="line-height: 200%;"><br />
+<strong><span style="font-size:18.0pt;line-height:200%">Document Object Model</span></strong><br />
+<strong><span style="font-size:10.0pt;
+line-height:200%">Introduction</span></strong></p>
+
+<p class="Standard" style="line-height: 200%;"><br />
+<span style="font-size:10.0pt;
+line-height:200%">The Document Object Model is a tree that contains connected nodes which are the elements of HTML markup. Javascript allows for the alteration of these nodes in various ways, as well as addition and removal of nodes. The HTML elements are objects and the DOM is the standard for how they are to be manipulated.<br />
+<br />
+<strong>Obtaining Elements</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">The &ldquo;getElementById&rdquo; method is one of the most useful functions because it allows for accessing of a particular element by a set Id. There are various other options for obtaining elements such as by Name, ClassName, and TagName(), but Id&#39;s tend to allow for more specific searching. Further navigation is possibly by &ldquo;chaining&rdquo; other dot operators such as &ldquo;firstChild&rdquo; and &ldquo;childNodes&rdquo;. This is because of the before-mentioned tree nature of the DOM and it&#39;s connected nature.<br />
+<br />
+<strong>Changing Elements:</strong></span></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">Changing elements is simple, one need only invoke a method to obtain a particular element along with a function that grabs a particular value from the element such as the elements HTML, attributes or style.<br />
+X.getElementById().innerHTML = &ldquo;y&rdquo;</span></p>
+
+<p class="Standard" style="line-height: 200%;"><br />
+<strong><span style="font-size:10.0pt;
+line-height:200%">Adding Elements</span></strong><span style="font-size:10.0pt;
+line-height:200%"><o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">&nbsp;Elements can be added with the &ldquo;createElement()&rdquo; and &ldquo;appendChild() functions. The create function will directly create an element but will not be added to a particular place, but can be saved to a variable, while the appendChild function directly allows for addition to the DOM by designating what it should be the child of.<br />
+&nbsp;Z = createElement(&ldquo;Y&rdquo;)<o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">&nbsp;X.appenedChild(Z)<br />
+<!--[if !supportLineBreakNewLine]--><br />
+<!--[endif]--><o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 200%;"><strong><span style="font-size:10.0pt;
+line-height:200%">Removing Elements</span></strong></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">Elements can be removed in a similar manner with the &ldquo;removeChild()&rdquo; function. One simply designate the element to be removed.<o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%">&nbsp;X.removeChild(Z)<o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 200%;"><span style="font-size:10.0pt;
+line-height:200%"><o:p>&nbsp;</o:p><strong>DOM Events</strong></span></p>
+
+<p class="Standard" style="line-height: 200%;"><br />
+<span style="font-size:10.0pt;
+line-height:200%">The DOM combined with javascript allows for dynamic interaction with pages through various methods. The most robust way to do this is through the &ldquo;addEventListener()&rdquo; function. This is invoked on a particular element obtained in whatever way. The parameters are a condition for the event to run, and a function to run when the condition is met.<br />
+X.getElementById(&ldquo;btn1&rdquo;).addEventListener(&ldquo;click&rdquo;, foo)<br />
+<!--[if !supportLineBreakNewLine]--><br />
+<!--[endif]--><o:p></o:p></span></p>
+
+<p class="Standard"><span style="font-size:10.0pt">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class="Standard" style="line-height: 20.7999992370605px;">&nbsp;</p>
+
+<p class="Standard"><o:p></o:p></p>
+
+
 
 <footer>
 <%=partial "footer"%>
