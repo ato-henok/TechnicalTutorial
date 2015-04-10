@@ -1,18 +1,259 @@
 <html>
 <head>
 <%=partial "header"%>
-
 </head>
-
 <body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?autoload=true&amp;skin=sunburst&amp;lang=css" defer="defer"></script>
+
 	<div id="nav-menu" class="nav">
 	<ul>
-	    <li style="background-color:white"><a href="mainHtml.html" style="color:red" style="color:red">HTML/CSS</a></li>
+	    <li style="background-color:white"><a href="mainHtml.html" style="color:#24476B">HTML/CSS</a></li>
 	    
 	     <li><a href="javascript_tutorial.html">Javascript</a></li>
 	      <li><a href="ruby_tutorial.html">Ruby</a></li>
 	 </ul>
 	</div>
+ 
+<pre class="prettyprint">
+<!--code-->
+</pre>
+
+<!--HTML Tutorial-->
+
+<div id="htmlTutorial">
+<p><strong>HTML</strong></p>
+
+<p><strong>Introduction</strong></p>
+
+<p>HTML stands for Hyper Text Markup Language. The language was first created by Tim Berners-Lee and his team in 1991.</p>
+
+<p style="margin-left:.5in;">HTML 2.0 was released in 1995.</p>
+
+<p style="margin-left:.5in;">HTML 4.0 was released in 1999. This is the most popular version until today.</p>
+
+<p style="margin-left:.5in;">HTML5 was released in 2012.</p>
+
+<p>To create an HTML document, simple create a file in any text editor program like Notepad and save the file as <strong>file_name.html</strong></p>
+
+<p><strong>Syntax</strong></p>
+
+<p>HTML consists of different <strong>tags</strong> which represent different type of content. Each tag has an <strong>opening</strong> and <strong>closing</strong> versions.</p>
+
+<p>Example of <strong>paragraph</strong> tag looks like:&nbsp; &lt;p&gt;Sample Paragraph&lt;/p&gt;</p>
+
+<p>The basic structure of an HTML document has &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags.</p>
+
+<p>&lt;!DOCTYPE&nbsp;html&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&nbsp;&nbsp;&lt;title&gt;Website Title&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</p>
+
+<p><strong>Data Structure</strong></p>
+
+<p><strong>HTML Element</strong></p>
+
+<p>HTML element is the content that is between the opening and closing tags. HTML elements can simple text or another html element. Some html elements are called <strong>void elements</strong> because they don&rsquo;t have element content. As a result, the closing tag can be merged with the opening tag which would look like <strong>&lt;tagname/&gt;. </strong>Elements such us &lt;img.../&gt;, &lt;hr /&gt; and &lt;br /&gt;&nbsp;are void elements. HTML also has a special tag called <strong>&lt;meta&gt;</strong> which allows you to put extra information about the HTML document. &nbsp;Comment tags in html have the following syntax:</p>
+
+<p>&lt;!-- Cool Comment&nbsp; --&gt;</p>
+
+<p>HTML elements are either <strong>in-line</strong> or <strong>block</strong>.</p>
+
+<p><strong>In-line: </strong>Interrupts the flow of the document, which means there is a break after that element.</p>
+
+<p><strong>In-line: </strong>Doesn&rsquo;t have a break and the flow is maintained.</p>
+
+<p><strong>&lt;div&gt;</strong> tags are used to group HTML elements in a container. Divs are block elements.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>HTML Attribute</strong></p>
+
+<p>HTML attributes are found in the opening tag of HTML element and they define the behavior of that element. An attribute has two parts, name and value. It is structured as <strong>name=&rdquo;value&rdquo;</strong></p>
+
+<p><strong>Example:</strong>&nbsp; align=&rdquo;center&rdquo;, color=&rdquo;red&rdquo;</p>
+
+<p><strong>HTML List</strong></p>
+
+<p>HTML lists display information as a list of your choice. Content of each row of the list is stored inside a tag called list, with tag name <strong>&lt;li&gt;</strong>. There are 3 types of list:</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&lt;ul&gt;</strong>&nbsp; - unordered list, displays in bullet points</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&lt;ol&gt;</strong> &nbsp;- ordered list, displays with numbers</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&lt;dl&gt;</strong> - dictionary list, displays in dictionary order</p>
+
+<p>Example:</p>
+
+<div>
+<pre>
+&lt;ul&gt;</pre>
+
+<pre>
+&lt;li&gt;Apple&lt;/li&gt;</pre>
+
+<pre>
+&lt;li&gt;Orange&lt;/li&gt;</pre>
+
+<pre>
+&lt;li&gt;Pear&lt;/li&gt;</pre>
+
+<pre>
+&lt;li&gt;Bickram&lt;/li&gt;</pre>
+
+<pre>
+&lt;/ul&gt;</pre>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>HTML Link</strong></p>
+
+<p>Links in HTML can link to a different document or a webpage through hyperlink. Linking is done with a special tag called anchor tag. When a person clicks on the content of the element, they are redirected to the given address. When debugging, you can put <strong># </strong>instead of address, which just redirects you to the same page you&rsquo;re on.</p>
+
+<div>
+<pre>
+Example: </pre>
+
+<pre>
+&lt;a href=&quot;cool_document.html&quot; &quot;&gt;Click Me&lt;/a&gt;</pre>
+
+<pre>
+&lt;a href=&quot;http://www.coolwebsite.com&quot; &quot;&gt;Click Me&lt;/a&gt;</pre>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>HTML Image</strong></p>
+
+<p>Images can be inserted to HTML document with a link to the source file. There is also an attribute with name <strong>alt</strong> whose value is used as an alternate content when the picture cannot be found.</p>
+
+<div>
+<pre>
+Example: &lt;img src=&quot;/images/coolPicture.png&quot; alt=&quot;Sample Text&quot;/&gt; </pre>
+</div>
+
+<p>&nbsp;</p>
+
+<p><strong>HTML Image</strong></p>
+
+<p>Special tag called &lt;embed&gt; can be used to embed multimedia (music, video&hellip;etc)&nbsp; content directly to html document. The basic attributes of embed tag are: source, width, and height.</p>
+
+<div>
+<pre>
+&lt;embed src=&quot;/html/coolContent.mid&quot; width=&quot;100%&quot; height=&quot;100&quot; &gt;</pre>
+</div>
+
+<p>&nbsp;</p>
+
+</div>
+
+
+<!--CSS Tutorial-->
+<div id="cssTutorial">
+
+<p><strong>CSS</strong></p>
+
+<p><strong>Introduction:-</strong></p>
+
+<p>CSS stands for Cascading Style Sheets. Before CSS, web developers have to include fonts and&nbsp;</p>
+
+<p>color information to every single page of webpage. So if they have to change any common&nbsp;</p>
+
+<p>information they have to change in all the pages. CSS gives a single point of control. You can&nbsp;</p>
+
+<p>change the entire website by changing just one file.</p>
+
+<p><strong>Syntax:-</strong></p>
+
+<p>CSS rule contains selector, which is HTML element tag, and properties like color, size and&nbsp;</p>
+
+<p>associated values with those properties.</p>
+
+<p>For example:-</p>
+
+<p>body {</p>
+
+<p>&nbsp; &nbsp; color: red;</p>
+
+<p>&nbsp; &nbsp; text-align: center;</p>
+
+<p>}</p>
+
+<p><strong>Data Structure:</strong></p>
+
+<p><strong>1. CSS Text</strong></p>
+
+<p>a. Text Color</p>
+
+<p>b. Text Alignment</p>
+
+<p>This property is used to change the color of the text.</p>
+
+<p>e.g:-</p>
+
+<p>body {</p>
+
+<p>&nbsp; &nbsp; color: blue;</p>
+
+<p>}</p>
+
+<p>h1 {</p>
+
+<p>&nbsp; &nbsp; color: #00ff00;</p>
+
+<p>}</p>
+
+<p>h2 {</p>
+
+<p>&nbsp; &nbsp; color: rgb(255,0,0);</p>
+
+<p>}</p>
+
+<p>This property is used to align text of HTML.</p>
+
+<p>e.g:-</p>
+
+<p>p { text-align: center;}&nbsp;</p>
+
+<p><strong>2. CSS Font:</strong></p>
+
+<p>CSS font works with font size, font style of the text. It used to specify different styles and&nbsp;</p>
+
+<p>sizes of text.</p>
+
+<p>e.g:-&nbsp;</p>
+
+<p>h1 {</p>
+
+<p>&nbsp; &nbsp; font-size: 40px;</p>
+
+<p>}</p>
+
+<p><strong>3. CSS lists:</strong></p>
+
+<p>These are types unordered and ordered lists. Unordered list (&lt;ul&gt;) marks the list with&nbsp;</p>
+
+<p>bullets but ordered lists (&lt;ol&gt;) marks with numbers.</p>
+
+<p>e.g:- ul{ list-style-type: circle;}, ol{list-style-type: upper-roman;}</p>
+
+<p><strong>4. CSS Tables:</strong></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CSS used to improve HTML table.</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp;e.g:- table, th, td {</p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;border: 1px solid black;</p>
+
+<p>&nbsp; &nbsp; }</p>
+
+
+
+</div>
 
 
 <footer>

@@ -1,11 +1,7 @@
-<html>
-<head>
 <%=partial "header"%>
-</head>
-<body>
-	<div id="nav-menu" class="nav">
+<div id="nav-menu" class="nav">
 	<ul><li><a href="mainHtml.html">HTML/CSS</a></li>
-<li style="background-color:white"><a href="javascript_tutorial.html" style="color:red" style="color:red">Javascript</a></li>
+<li style="background-color:white"><a href="javascript_tutorial.html" style="color:#24476B">Javascript</a></li>
 
 <li><a href="ruby_tutorial.html">Ruby</a></li>
 </ul>
@@ -18,5 +14,4 @@ Javascript
 <footer>
 <%=partial "footer"%>
 </footer>
-</body>
-</html>
+

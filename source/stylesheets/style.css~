@@ -1,24 +1,19 @@
-.myNav{
-background-color:red;
-}
+
 #myHeader{
  width: 100%;
     height: auto;
-    background-color:#CD5C5C;
+    background-color:#C2D1E0;
     padding: 10px;
     margin:0;
 }
 #myfooter {
 	width:100%;
 	height:80px;
-	position:absolute;
-	bottom:0;
-	left:0;
-	background-color:#CD5C5C;
+	background-color:#99B2CC;
 }
 
 body{
-background-color:gray;
+background-color:#E9E9EB;
 margin:0;
 }
 
@@ -29,12 +24,12 @@ a:link {
 
 /* visited link */
 a:visited {
-    color: Red;
+    color: Purple;
 }
 
 /* mouse over link */
 a:hover {
-    color: DeepSkyBlue ;
+    color: Blue ;
 }
 
 /* selected link */
@@ -42,9 +37,9 @@ a:active {
     color: #0000FF;
 }
 .nav {
-    margin-top: 15px;
+    margin-top: 0px;
     height: 35px;
-    background: FireBrick ; 
+    background: #24476B; 
     font-family: 'Franklin Gothic Medium';
 }
 
@@ -74,7 +69,7 @@ a:active {
 
 #nav-menu ul ul li{
 	display:block;
-	background-color: #FF4747;
+	background-color: #24476B;
 }
 
 .nav ul li a {
@@ -88,7 +83,7 @@ a:active {
 }
 
 .nav ul li:hover {
-    background-color: #FF4747 ;
+    background-color: #4775A3;
 }
 
 .headerBreak {
@@ -96,4 +91,17 @@ a:active {
     height: 0;
     border-bottom: 2px solid #FF3333;
 }
+
+#htmlTutorial{
+    background-color: #CCFFCC;
+}
+
+#cssTutorial{
+    background-color: #CCE6FF;
+}
+
+#rubyTutorial{
+    background-color: #C2D1E0;
+}
+
 

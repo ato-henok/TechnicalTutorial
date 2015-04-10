@@ -1,19 +1,317 @@
-<html>
-<head>
 <%=partial "header"%>
-</head>
-<body>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js" defer="defer"></script>
+
 <div id="nav-menu" class="nav">
 <ul><li><a href="mainHtml.html">HTML/CSS</a></li>
 <li><a href="javascript_tutorial.html">Javascript</a></li>
-<li style="background-color:white"><a href="ruby_tutorial.html" style="color:red" style="color:red">Ruby</a></li>
-
+<li style="background-color:white"><a href="ruby_tutorial.html" style="color:#24476B">Ruby</a></li>
 </ul>
 </div>
 
-<p>Ruby</p>
+
+<!--Ruby Tutorial-->
+<div id="rubyTutorial">
+<p><strong>Introduction</strong></p>
+
+<p>what is ruby?</p>
+
+<p>Ruby is a cross-platform interpreted language that has many features in common with other &ldquo;scripting&rdquo; languages such as Perl and Python. It has an easily readable type of syntax that looks somewhat Pascal-like at first sight. It is thoroughly object-oriented and has a good deal in common with the great-granddaddy of &ldquo;pure&rdquo; object-oriented languages, Smalltalk. It has been said that the languages that most influenced the development of Ruby were Perl, Smalltalk, Eiffel, Ada, and Lisp. The Ruby language was created by Yukihiro Matsumoto (commonly known as Matz), and it was first released in 1995.</p>
+
+<p>Why use Ruby?</p>
+
+<p style="margin-left:2.4pt;"><strong>Ruby is &quot;A Programmer&#39;s Best Friend&quot;.</strong></p>
+
+<p style="margin-left:2.4pt;">Ruby has features that are similar to those of Smalltalk, Perl, and Python. Perl, Python, and Smalltalk are scripting languages. Smalltalk is a true object-oriented language. Ruby, like Smalltalk, is a perfect object-oriented language. Using Ruby syntax is much easier than using Smalltalk syntax.</p>
+
+<p><strong>Features of Ruby</strong></p>
+
+<ul>
+	<li>Ruby is an open-source and is freely available on the Web, but it is subject to a license.</li>
+	<li>Ruby is a general-purpose, interpreted programming language.</li>
+	<li>Ruby is a true object-oriented programming language.</li>
+	<li>Ruby is a server-side scripting language similar to Python and PERL.</li>
+	<li>Ruby can be used to write Common Gateway Interface (CGI) scripts.</li>
+	<li>Ruby can be embedded into Hypertext Markup Language (HTML).</li>
+	<li>Ruby has a clean and easy syntax that allows a new developer to learn Ruby very quickly and easily.</li>
+	<li>Ruby has similar syntax to that of many programming languages such as C++ and Perl.</li>
+	<li>Ruby is very much scalable and big programs written in Ruby are easily maintainable.</li>
+	<li>Ruby can be used for developing Internet and intranet applications.</li>
+	<li>Ruby can be installed in Windows and POSIX environments.</li>
+	<li>Ruby support many GUI tools such as Tcl/Tk, GTK, and OpenGL.</li>
+	<li>Ruby can easily be connected to DB2, MySQL, Oracle, and Sybase.</li>
+	<li>Ruby has a rich set of built-in functions, which can be used directly into Ruby scripts.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>General Syntax</p>
+
+<p style="margin-left:2.4pt;">Let us write a simple program in ruby. All ruby files will have extension&nbsp;<strong>.rb</strong>. So, put the following source code in a test.rb file.</p>
+
+<!--**********************-->
+<?prettify?>
+<code class="prettyprint" lang="ruby">
+<!--code-->
+
+<p>#!/usr/bin/ruby -w</p>
+def function end
+<p>puts &quot;Hello, Ruby!&quot;;</p>
+</code>
+<!--**********************-->
+<p style="margin-left:2.4pt;">Here, I assumed that you have Ruby interpreter available in /usr/bin directory. Now, try to run this program as follows:</p>
+
+<p>$ ruby test.rb</p>
+
+<p style="margin-left:2.4pt;">This will produce the following result:</p>
+
+<p>Hello, Ruby!</p>
+
+<p style="margin-left:2.4pt;">You have seen a simple Ruby program, now lets see few basic concepts related to Ruby Syntax:</p>
+
+<h2>Whitespace in Ruby Program:</h2>
+
+<p style="margin-left:2.4pt;">Whitespace characters such as spaces and tabs are generally ignored in Ruby code, except when they appear in strings. Sometimes, however, they are used to interpret ambiguous statements. Interpretations of this sort produce warnings when the -w option is enabled.</p>
+
+<p style="margin-left:2.4pt;"><strong>Example:</strong></p>
+
+<p>a + b is interpreted as a+b ( Here a is a local variable)</p>
+
+<p>a&nbsp; +b is interpreted as a(+b) ( Here a is a method call)</p>
+
+<h2>Line Endings in Ruby Program:</h2>
+
+<p style="margin-left:2.4pt;">Ruby interprets semicolons and newline characters as the ending of a statement. However, if Ruby encounters operators, such as +, -, or backslash at the end of a line, they indicate the continuation of a statement.</p>
+
+<h2>Ruby Identifiers:</h2>
+
+<p style="margin-left:2.4pt;">Identifiers are names of variables, constants, and methods. Ruby identifiers are case sensitive. It mean Ram and RAM are two different idendifiers in Ruby.</p>
+
+<p style="margin-left:2.4pt;">Ruby identifier names may consist of alphanumeric characters and the underscore character ( _ ).</p>
+
+<p>Ruby Comments:</p>
+
+<p style="margin-left:2.4pt;">A comment hides a line, part of a line, or several lines from the Ruby interpreter. You can use the hash character (#) at the beginning of a line:</p>
+
+<p># I am a comment. Just ignore me.</p>
+
+<p>&nbsp;</p>
+
+<p>Downloading Ruby</p>
+
+<p><a name="h.gjdgxs"></a>You can download the latest version of Ruby at&nbsp;<a href="http://www.ruby-lang.org/en/downloads/">http://www.ruby-lang.org/en/downloads/</a>. Be sure to download the binaries (not merely the source code). Windows users have the option of installing Ruby using the Ruby Installer, available at&nbsp;<a href="http://www.rubyinstaller.org/">http://www.rubyinstaller.org/</a>. There are also several alternative implementations of Ruby, the most established of which is JRuby.&nbsp;</p>
+
+<p>Running Ruby Programs</p>
+
+<p><a name="h.30j0zll"></a>It is often useful to keep a command window open in the source directory containing your Ruby program files. Assuming that the Ruby interpreter is correctly pathed on your system, you will then be able to run programs by entering&nbsp;ruby&nbsp;<em>programname</em>. For example, this is the command you would enter in order to run the&nbsp;<em>helloworld.rb</em>program:</p>
+
+<p style="margin-left:15.0pt;">ruby helloworld.rb</p>
+
+<p><a name="h.1fob9te"></a>If you use a Ruby IDE, you may be able to load the Ruby programs into the IDE and run them using the integrated tools of that IDE.</p>
+
+<p>&nbsp;</p>
+
+<p>Data Types</p>
+
+<p>Strings</p>
+
+<p style="margin-left:2.4pt;">A String object in Ruby holds and manipulates an arbitrary sequence of one or more bytes, typically representing characters that represent human language.</p>
+
+<p style="margin-left:2.4pt;">The simplest string literals are enclosed in single quotes (the apostrophe character). The text within the quote marks is the value of the string:</p>
+
+<p>&#39;Welcome to CSE 3901&#39;</p>
+
+<p style="margin-left:2.4pt;">If you need to place an apostrophe within a single-quoted string literal, precede it with a backslash so that the Ruby interpreter does not think that it terminates the string:</p>
+
+<p>&#39;Won\&#39;t you read O\&#39;Reilly\&#39;s book?&#39;</p>
+
+<p style="margin-left:2.4pt;">The backslash also works to escape another backslash, so that the second backslash is not itself interpreted as an escape character.</p>
+
+<p style="margin-left:2.4pt;">Following are string-related features Ruby.</p>
+
+<h2>Expression Substitution:</h2>
+
+<p style="margin-left:2.4pt;">Expression substitution is a means of embedding the value of any Ruby expression into a string using #{ and }:</p>
+
+<p>#!/usr/bin/ruby</p>
+
+<p>&nbsp;</p>
+
+<p>x, y, z = 12, 36, 72</p>
+
+<p>puts &quot;The value of x is #{ x }.&quot;</p>
+
+<p>puts &quot;The sum of x and y is #{ x + y }.&quot;</p>
+
+<p>puts &quot;The average was #{ (x + y + z)/3 }.&quot;</p>
+
+<p style="margin-left:2.4pt;">This will produce the following result:</p>
+
+<p>The value of x is 12.</p>
+
+<p>The sum of x and y is 48.</p>
+
+<p>The average was 40.</p>
+
+<p>&nbsp;</p>
+
+<p>Ranges, Arrays, Hashes</p>
+
+<p style="margin-left:2.4pt;">Ranges occur everywhere: January to December, 0 to 9, lines 50 through 67, and so on. Ruby supports ranges and allows us to use ranges in a variety of ways:</p>
+
+<p>Create instance of class (Range)</p>
+
+<p>You can use &ldquo;new&rdquo; to create a range object:</p>
+
+<p>a = Range.new 1,5</p>
+
+<p>But literal syntax is more common:</p>
+
+<p>nums=1..10</p>
+
+<p>b=&rsquo;car&rsquo; &hellip;&rsquo;cat&rsquo;</p>
+
+<p>Using the method to_a, we can convert ranges to arrays</p>
+
+<p>range1 = (1..10).to_a</p>
+
+<p>range2 = (&#39;bar&#39;..&#39;bat&#39;).to_a</p>
+
+<p>&nbsp;</p>
+
+<p>puts &quot;#{range1}&quot;</p>
+
+<p>puts &quot;#{range2}&quot;</p>
+
+<p style="margin-left:2.4pt;">This will produce the following result:</p>
+
+<p>1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
+
+<p>bar, bas, bat</p>
+
+<p>Method begin/end, first/last</p>
+
+<p>b.last #=&gt; &ldquo;cat&rdquo;</p>
+
+<p>b.last 2 #=&gt;[&ldquo;car&rdquo;,&rdquo;cas&rdquo;]</p>
+
+<p>Arrays</p>
+
+<p>You can create an instance Array using &ldquo;new&rdquo;:</p>
+
+<p>a=Array.new 4 #=&gt; [nil,nil,nil,nil]</p>
+
+<p>But literal notation is common:</p>
+
+<p>B=[6,2,3.14,&rdquo;pi&rdquo;,[]]</p>
+
+<p>The following are some methods for element access,modification</p>
+
+<p>b.class #=&gt; Array</p>
+
+<p>b.length #=&gt; 5</p>
+
+<p>b[0] #=&gt; 5</p>
+
+<p>b[0] #=&gt; 6</p>
+
+<p>b[-2] #=&gt; &ldquo;pi&rdquo;</p>
+
+<p>b[10] = 4</p>
+
+<p>b.length #=&gt;11</p>
+
+<p><a name="h.3znysh7"></a>b[2,3] #=&gt; [3,14,&rdquo;pi&rdquo;,[]]</p>
+
+<p>Hashes</p>
+
+<p>Classes</p>
+
+<p>Object</p>
+
+<p>Loops and Iterators</p>
+
+<p><strong>Loops vs Iterations</strong></p>
+
+<p>The basic difference between Loops and Iterators is that loops run a block of code multiple times while keeping track of the loop number in a form of &ldquo;index&rdquo;; on the other hand, iteration is simply running a block of code multiple times.</p>
+
+<p><strong>For loops</strong></p>
+
+<p>For-loops are one of the commonly used loops in Ruby.</p>
+
+<p>Example:</p>
+
+<p style="margin-left:15.0pt;">for i in [1,2,3] do</p>
+
+<p style="margin-left:15.0pt;">&nbsp;&nbsp; puts( i )</p>
+
+<p style="margin-left:15.0pt;">end</p>
+
+<p>This for-loop iterates the given array and prints the contents. &ldquo;i&rdquo; is the index of the current element and it ranges from 0 to 2 in this case. The array can also be saved in a variable and you can use the variable name in the for-loop.</p>
+
+<p>Another way of doing this loop is:</p>
+
+<p style="margin-left:15.0pt;">[1,2,3].each&nbsp; do |i|</p>
+
+<p style="margin-left:15.0pt;">&nbsp;&nbsp; puts( i )</p>
+
+<p style="margin-left:15.0pt;">end</p>
+
+<p><strong>Blocks and Block Parameters</strong></p>
+
+<p>Block: body of an iterator in ruby</p>
+
+<p>Block Parameters: the variable passed in a block.</p>
+
+<p>Example:</p>
+
+<p>[[1,2,3],[3,4,5],[6,7,8]].each do</p>
+
+<p>&nbsp;&nbsp; |x,y,z|</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts( &quot; #{x},&nbsp; #{y},&nbsp; #{z}&quot; )</p>
+
+<p>end</p>
+
+<p>In the above example, the .each goes through the three elements in the array. The elements inside the array in this case are another array. In the first run of .each, the element being processed is [1,2,3]. The three block parameters refer to the 3 elements in this array. Therefore, in the first run of .each, the three values 1, 2, 3 are printed.</p>
+
+<h1>While Loops</h1>
+
+<p>This is another looping technique. The difference with for-loop is that while-loop does NOT keep track of the index by default. It loops until the condition is false.</p>
+
+<p>Example:</p>
+
+<p style="margin-left:15.0pt;">while buckeye</p>
+
+<p style="margin-left:15.0pt;">&nbsp;&nbsp; awesome</p>
+
+<p style="margin-left:15.0pt;">end</p>
+
+<p>Or</p>
+
+<p style="margin-left:15.0pt;">awesome while buckeye</p>
+
+<p>In the example above, the block &ldquo;happy&rdquo; will run as long as the condition &ldquo;buckeye&rdquo; holds.</p>
+
+<h1>Until Loops</h1>
+
+<p>These loops are the opposite of while-loops. Code executes until the condition is reached.</p>
+
+<p>Example:</p>
+
+<p style="margin-left:15.0pt;">i=0</p>
+
+<p style="margin-left:15.0pt;">until i == 10</p>
+
+<p style="margin-left:15.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; puts(i)</p>
+
+<p style="margin-left:15.0pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; i +=1</p>
+
+<p style="margin-left:15.0pt;">end</p>
+
+<p>The above example, starts from i=0, then it increments it &ldquo;until&rdquo; it is 10, but excludes 10. Thus, the code would print out 0 to 9.&nbsp;</p>
+
+</div>
+
 <footer>
 <%=partial "footer"%>
 </footer>
-</body>
-</html>
